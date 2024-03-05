@@ -1,0 +1,104 @@
+@import 'variables',
+        'mixins',
+        'globals',
+        'desktop',
+        'mobile',
+        'normalize';
+
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap';
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.contact-row {
+    @include flex-center;
+    background-color: $dark-green;
+    height: 59px;
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        @include flex-center;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+        .contacts {
+            @include flex-center;
+            div {
+                @include flex-center;
+                margin-right: 30px;
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .language {
+            a {
+                text-decoration: none;
+                color: white;
+                svg {
+                    margin-left: 5px;
+                }
+                &:hover {
+                    svg {
+                        transform: rotate(180deg);
+                        transition: 0.25s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+.nav-row {
+    @include flex-center;
+    background-color: white;
+    height: 85px;
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        @include flex-center;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 700;
+        color: $text-black;
+        .nav{
+            @include flex-center;
+            width: 898px;
+            justify-content: space-between;
+            .call-btn {
+                @include flex-center;
+                border: 0;
+                border-radius: 5px;
+                height: 50px;
+                width: 170px;
+                padding: 10px 35px;
+                color: white;
+                background-color: $primary-green;
+                svg{
+                    margin-right: 10px;
+                }
+            }
+            menu {
+                ul {
+                @include flex-center;
+                li {
+                    margin-right: 44px;
+                }
+            }
+        }
+        }
+    }
+}
+.row {
+    height: 719px;
+    width: 100%;
+    background: rgb(0,115,12);
+    background: linear-gradient(90deg, rgba(0,115,12,0.4430147058823529) 0%, rgba(255,255,255,1) 81%);
+}

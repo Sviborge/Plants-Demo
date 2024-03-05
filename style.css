@@ -1,1 +1,156 @@
-/*# sourceMappingURL=style.css.map */
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  background-color: #0C4B35;
+  height: 59px;
+}
+.contact-row .container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+}
+.contact-row .container .contacts {
+  display: flex;
+  align-items: center;
+}
+.contact-row .container .contacts div {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.contact-row .container .contacts div svg {
+  margin-right: 10px;
+}
+.contact-row .container .language a {
+  text-decoration: none;
+  color: white;
+}
+.contact-row .container .language a svg {
+  margin-left: 5px;
+}
+.contact-row .container .language a:hover svg {
+  transform: rotate(180deg);
+  transition: 0.25s ease-in-out;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 85px;
+}
+.nav-row .container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+}
+.nav-row .container .nav {
+  display: flex;
+  align-items: center;
+  width: 898px;
+  justify-content: space-between;
+}
+.nav-row .container .nav .call-btn {
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 5px;
+  height: 50px;
+  width: 170px;
+  padding: 10px 35px;
+  color: white;
+  background-color: #00730C;
+}
+.nav-row .container .nav .call-btn svg {
+  margin-right: 10px;
+}
+.nav-row .container .nav menu ul {
+  display: flex;
+  align-items: center;
+}
+.nav-row .container .nav menu ul li {
+  margin-right: 44px;
+}
+
+.row {
+  height: 719px;
+  width: 100%;
+  background: rgb(0, 115, 12);
+  background: linear-gradient(90deg, rgba(0, 115, 12, 0.4430147059) 0%, rgb(255, 255, 255) 81%);
+}/*# sourceMappingURL=style.css.map */
