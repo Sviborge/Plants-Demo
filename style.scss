@@ -78,7 +78,9 @@ body {
                 border-radius: 5px;
                 height: 50px;
                 width: 170px;
-                padding: 10px 35px;
+                padding: 10px 34px;
+                font-size: 18px;
+                font-weight: 700;
                 color: white;
                 background-color: $primary-green;
                 svg{
@@ -88,17 +90,92 @@ body {
             menu {
                 ul {
                 @include flex-center;
-                li {
-                    margin-right: 44px;
+                    li {
+                        margin-right: 44px;
+                    }
                 }
             }
-        }
         }
     }
 }
 .row {
     height: 719px;
     width: 100%;
-    background: rgb(0,115,12);
     background: linear-gradient(90deg, rgba(0,115,12,0.4430147058823529) 0%, rgba(255,255,255,1) 81%);
+    @include flex-center;
+    .col {
+        width: 696px;
+        margin-left: 255px;
+        span {
+            font-size: 16px;
+            font-weight: 700;
+            @include flex-center;
+            svg {
+                margin-right: 5px;
+            }
+        }
+        h2 {
+            font-size: 58px;
+            font-weight: 800;
+            margin: 20px 0;
+            span {
+                font-size: 58px;
+                font-weight: 800;
+                color: $primary-green;
+            }
+        }
+        h6 {
+            color: $text-grey;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .info {
+            @include flex-center;
+            margin-top: 50px;
+            button {
+                @include flex-center;
+                border: 0;
+                border-radius: 5px;
+                height: 50px;
+                width: 175px;
+                padding: 13px 35px;
+                color: white;
+                background-color: $primary-green;
+                font-size: 18px;
+                font-weight: 700;
+                margin-right: 30px;
+            }
+        }
+        a {
+            @include flex-center;
+            color: $text-grey;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            svg {
+                margin-left: 15px;
+            }
+        }
+        .achivments {
+            @include flex-center;
+            margin-top: 50px;
+            .achivment {
+                @include flex-center;
+                margin-right: 10px;
+                width: 149px;
+                height: 50px;
+                font-size: 15px;
+                font-weight: 700;
+                .achivment-circle {
+                    height: 50px;
+                    width: 50px;
+                    @include flex-center;
+                    justify-content: center;
+                    border-radius: 35px;
+                    margin-right: 10px;
+                    background: linear-gradient(90deg, rgba(0,115,12,0.4430147058823529) 0%, rgba(255,255,255,1) 81%);
+                }
+            }
+        }
+    }
 }
